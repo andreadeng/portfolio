@@ -3,6 +3,7 @@ import { LargeHeader, MediumHeader, SmallHeader, Paragraph, Caption } from '../c
 import { ContentSection } from '../components/Spacing'; 
 import { Grid } from 'semantic-ui-react';
 import { Image } from 'semantic-ui-react';
+import { LinkHeader, LinkBody } from '../components/Buttons';
 
 
 class ProjectPage extends React.Component {
@@ -19,7 +20,7 @@ class ProjectPage extends React.Component {
         </ContentSection>
 
         <ContentSection>
-          <Image src='https://cdn-images-1.medium.com/max/2000/1*fGZAAXYFhoKVBv_PJGbUuA.png' fluid />
+          
         </ContentSection>
         
         <ContentSection text>
@@ -31,14 +32,19 @@ class ProjectPage extends React.Component {
                 The Challenge
               </MediumHeader>
               <Paragraph>
-                Scalable Press is a San Francisco based fulfillment 
-                startup revolutionizing the printing industry.
+                <a href="https://scalablepress.com/" target="_blank">
+                  <LinkBody>
+                    Scalable Press
+                  </LinkBody>
+                </a>
+                &nbsp; is a San Francisco based fulfillment 
+                startup revolutionizing the printing industry. Scalable Press 
+                web enables users to run their business - all on one platform.
               </Paragraph>
               <Paragraph>
-                Our users biggest pain point was not knowing where their order was.
-                Current order status information on the dashboard was 
-                incomplete and inaccurate. Users often 
-                hear about order delays from their angry customers asking, “ WHERE IS MY ORDER?!?!”
+                However, users' biggest frustration with the platform
+                was inaccurate and incomplete order status information. Users often 
+                hear about order delays from their angry customers.
                 I led the project to surface order status information to users and reduce delayed orders 
                 spanning between May and August 2017.
               </Paragraph>
@@ -49,7 +55,10 @@ class ProjectPage extends React.Component {
         <ContentSection text>
           <Image src='https://cdn-images-1.medium.com/max/2000/1*Obi0br-pktuxFOdzoreccQ.jpeg' fluid />
         </ContentSection>
-
+        <ContentSection text>
+          <Image src='https://cdn-images-1.medium.com/max/2000/1*J2NKYsrN_4mxMbCEymCanA.jpeg' fluid />
+        </ContentSection>
+          
         <ContentSection text>
           <Grid>
             <Grid.Column only='tablet computer' width={4}>

@@ -3,11 +3,11 @@ import { MediumHeader } from './Typography';
 
 const LinkBody = styled.span`
   color: #212121;
-  border-bottom: 1px solid #3D5AFE;
+  border-bottom: 1px solid #536DFE;
   
   &:hover {
-    color: #3D5AFE;
-    border-bottom: 1px solid #3D5AFE;
+    color: #536DFE;
+    border-bottom: 1px solid #536DFE;
     -webkit-transition: all .4s ease;
     transition: all .3s ease;
   }
