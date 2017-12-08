@@ -20,7 +20,7 @@ class ProjectPage extends React.Component {
         </ContentSection>
 
         <ContentSection>
-          
+          <Image src='https://cdn-images-1.medium.com/max/2000/1*fGZAAXYFhoKVBv_PJGbUuA.png' fluid />
         </ContentSection>
         
         <ContentSection text>
