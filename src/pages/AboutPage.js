@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContentSection } from '../components/Spacing';
+import { ContentSection } from '../atoms/Spacing';
 
 class AboutPage extends React.Component {
   render() {

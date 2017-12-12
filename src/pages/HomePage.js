@@ -1,13 +1,13 @@
 import React from 'react';
-import { LargeHeader, MediumHeader, SmallHeader, Paragraph, Caption } from '../components/Typography';
-import { ContentSection, SmallContentSection } from '../components/Spacing';
-
-import { LinkHeader, LinkBody } from '../components/Buttons';
+import { Link } from 'react-router';
 
 import { Container } from 'semantic-ui-react'; 
 import { Grid } from 'semantic-ui-react';
 import { Image } from 'semantic-ui-react';
-import { Link } from 'react-router';
+
+import { LargeHeader, MediumHeader, SmallHeader, Paragraph, Caption } from '../atoms/Typography';
+import { ContentSection, SmallContentSection } from '../atoms/Spacing';
+import { LinkHeader, LinkBody } from '../components/Buttons';
 
 
 class HomePage extends React.Component {
@@ -50,18 +50,18 @@ class HomePage extends React.Component {
         </ContentSection>
 
         <SmallContentSection text>
-          <SmallHeader>
+          <Paragraph>
             Select Works
-          </SmallHeader>
+          </Paragraph>
         </SmallContentSection>
         <ContentSection text>
-          <Link to="/on-hold-project-page">
-            <Image src='https://cdn-images-1.medium.com/max/2000/1*fGZAAXYFhoKVBv_PJGbUuA.png' fluid />
-            <MediumHeader>
+          <Link to="/orders-project-page">
+            <Image src='https://cdn-images-1.medium.com/max/2000/1*aSmelP-NN3O_i4uaQ2mBbA.png' fluid />
+            <SmallHeader>
               <LinkHeader>
                 Reducing order delays
               </LinkHeader>
-            </MediumHeader>
+            </SmallHeader>
             <Caption>
               Product Designer &middot; Scalable Press &middot; 2017
             </Caption>
@@ -69,13 +69,13 @@ class HomePage extends React.Component {
         </ContentSection>
 
         <ContentSection text>
-          <Link to="/project-page">
+          <Link to="/sp-project-page">
             <Image src='https://cdn-images-1.medium.com/max/800/1*u7u21buSPyIU9pcAhyZ8mQ.jpeg' fluid />
-            <MediumHeader>
+            <SmallHeader>
               <LinkHeader>
                 Unifying Scalable Press web
               </LinkHeader>
-            </MediumHeader>
+            </SmallHeader>
             <Caption>
               Product Designer &middot; Scalable Press &middot; 2017
             </Caption>
@@ -86,11 +86,11 @@ class HomePage extends React.Component {
         <ContentSection text>
           <Link to="/project-page">
             <Image src='https://cdn-images-1.medium.com/max/1000/1*b6gyJahydn-TD553zGSybg.png' fluid />
-            <MediumHeader>
+            <SmallHeader>
               <LinkHeader>
                 TeeChip Dashboard
               </LinkHeader>
-            </MediumHeader>
+            </SmallHeader>
             <Caption>
               Product Designer &middot; Scalable Press &middot; 2017
             </Caption>

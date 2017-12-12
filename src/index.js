@@ -1,28 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {IndexRoute, Router, Route, hashHistory} from 'react-router';
+import {IndexRoute, Router, Route, browserHistory} from 'react-router';
 
-import './index.css';
-import './semantic/dist/semantic.min.css';
-
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-
+import Chrome from './components/Chrome';
 import HomePage from './pages/HomePage';
-import ProjectPage from './pages/ProjectPage';
-import OnHoldProjectPage from './pages/OnHoldProjectPage';
-
+import OrdersProjectPage from './pages/OrdersProjectPage';
+import SpProjectPage from './pages/SpProjectPage';
 import AboutPage from './pages/AboutPage';
-
+import './index.css';
 
 class Portfolio extends React.Component {
   render() {
     return (
-      <Router history={hashHistory}>
-        <Route path="/" component={App}>
+      <Router history={browserHistory}>
+        <Route path="/" component={Chrome}>
           <IndexRoute component={HomePage} />
-          <Route path="on-hold-project-page" component={OnHoldProjectPage} />
-          <Route path="project-page" component={ProjectPage} />
+          <Route path="orders-project-page" component={OrdersProjectPage} />
+          <Route path="sp-project-page" component={SpProjectPage} />
           <Route path="about" component={AboutPage} />
         </Route>
       </Router>
