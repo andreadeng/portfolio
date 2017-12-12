@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {IndexRoute, Router, Route, browserHistory} from 'react-router';
+import {IndexRoute, Router, Route, hashHistory} from 'react-router';
 
 import Chrome from './components/Chrome';
 import HomePage from './pages/HomePage';
@@ -12,7 +12,7 @@ import './index.css';
 class Portfolio extends React.Component {
   render() {
     return (
-      <Router history={browserHistory}>
+      <Router history={hashHistory}>
         <Route path="/" component={Chrome}>
           <IndexRoute component={HomePage} />
           <Route path="orders-project-page" component={OrdersProjectPage} />
