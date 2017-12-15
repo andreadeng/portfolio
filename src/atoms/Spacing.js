@@ -1,16 +1,10 @@
-import styled from 'styled-components';
-import { Container } from 'semantic-ui-react';
+const spacing = {
+  none: '0',
+  xxs: '0.5rem',
+  xs: '1rem',
+  s: '2rem',
+  m: '4rem',
+  l: '8rem',
+}
 
-const SmallContentSection = styled(Container)`
-  margin-bottom: 1.5em;
-`;
-const ContentSection = styled(Container)`
-  margin-bottom: 3em;
-`;
-
-const Page = styled.div`
-  margin-top: 3em;
-  margin-bottom: 4em;
-`;
-
-export { ContentSection, SmallContentSection, Page};
+export default spacing;

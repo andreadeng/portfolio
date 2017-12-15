@@ -1,20 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router';
+import styled from 'styled-components';
 
-import { Container } from 'semantic-ui-react'; 
 import { Grid } from 'semantic-ui-react';
 import { Image } from 'semantic-ui-react';
 
-import { LargeHeader, MediumHeader, SmallHeader, Paragraph, Caption } from '../atoms/Typography';
-import { ContentSection, SmallContentSection } from '../atoms/Spacing';
+import MarginBottomM from '../components/MarginBottomM';
+import MarginBottomS from '../components/MarginBottomS';
+import Header from '../components/Header';
+import Paragraph from '../components/Paragraph';
+import Caption from '../components/Caption';
 import { LinkHeader, LinkBody } from '../components/Buttons';
 
 
 class HomePage extends React.Component {
   render() {
     return (
-      <div className="HomePage">
-        <ContentSection text>
+      <div>
+        <MarginBottomM text>
           <Grid>
             <Grid.Column width={14}>
               <Paragraph>
@@ -39,63 +42,62 @@ class HomePage extends React.Component {
                   </LinkBody>
                 </a>
                 .&nbsp;
-                I believe in technology's potential for good and explores 
-                how everyday. I use my background in cognitive psychology to design solutions
+                I believe in technology's potential for good. I use my background in cognitive and social psychology to design solutions
                 that speak to our humanity.
               </Paragraph>
             </Grid.Column>
             <Grid.Column width={2}>
             </Grid.Column>
           </Grid>
-        </ContentSection>
+        </MarginBottomM>
 
-        <SmallContentSection text>
-          <Paragraph>
+        <MarginBottomS text>
+          <Header xsmall>
             Select Works
-          </Paragraph>
-        </SmallContentSection>
-        <ContentSection text>
+          </Header>
+        </MarginBottomS>
+        <MarginBottomM text>
           <Link to="/orders-project-page">
             <Image src='https://cdn-images-1.medium.com/max/2000/1*aSmelP-NN3O_i4uaQ2mBbA.png' fluid />
-            <SmallHeader>
+            <Header link>
               <LinkHeader>
                 Reducing order delays
               </LinkHeader>
-            </SmallHeader>
+            </Header>
             <Caption>
               Product Designer &middot; Scalable Press &middot; 2017
             </Caption>
           </Link>
-        </ContentSection>
+        </MarginBottomM>
 
-        <ContentSection text>
+        <MarginBottomM text>
           <Link to="/sp-project-page">
-            <Image src='https://cdn-images-1.medium.com/max/800/1*u7u21buSPyIU9pcAhyZ8mQ.jpeg' fluid />
-            <SmallHeader>
+            <Image src='https://cdn-images-1.medium.com/max/2000/1*dsW4EQJ99LXLgYDiDBQjzA.png' fluid />
+            <Header link>
               <LinkHeader>
                 Unifying Scalable Press web
               </LinkHeader>
-            </SmallHeader>
+            </Header>
             <Caption>
               Product Designer &middot; Scalable Press &middot; 2017
             </Caption>
           </Link>
-        </ContentSection>
+        </MarginBottomM>
         
 
-        <ContentSection text>
+        <MarginBottomM text>
           <Link to="/project-page">
             <Image src='https://cdn-images-1.medium.com/max/1000/1*b6gyJahydn-TD553zGSybg.png' fluid />
-            <SmallHeader>
+            <Header link>
               <LinkHeader>
                 TeeChip Dashboard
               </LinkHeader>
-            </SmallHeader>
+            </Header>
             <Caption>
               Product Designer &middot; Scalable Press &middot; 2017
             </Caption>
           </Link>
-        </ContentSection>
+        </MarginBottomM>
       </div>
     );
   }

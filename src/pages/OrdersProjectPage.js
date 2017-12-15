@@ -1,31 +1,36 @@
 import React from 'react';
 
-import { LargeHeader, MediumHeader, SmallHeader, Paragraph, Caption, InlineCaption, CaptionHeader, ItalicSpan, SmallPrimary } from '../atoms/Typography';
-import { ContentSection, SmallContentSection } from '../atoms/Spacing'; 
-import { LinkHeader, LinkBody } from '../components/Buttons';
-import { TextSection, SmallTextSection } from '../components/TextSection'; 
-import { ImageSection, FullImageSection, PairImageSection } from '../components/ImageSection'; 
+import MarginBottomM from '../components/MarginBottomM';
+import TextSection from '../components/TextSection'; 
+import TextSectionSub from '../components/TextSectionSub'; 
+import ImageSection from '../components/ImageSection';
+import FullImageSection from '../components/FullImageSection';
+import Header from '../components/Header';
+import Paragraph from '../components/Paragraph';
+import Caption from '../components/Caption';
+import Span from '../components/Span';
+import { LinkBody } from '../components/Buttons';
 
 
 class OrdersProjectPage extends React.Component {
   render() {
     return (
       <div className="OrdersProjectPage">
-        <ContentSection text>
-          <LargeHeader>
+        <MarginBottomM text>
+          <Header large>
             Reducing order delays
-          </LargeHeader>
+          </Header>
           <Caption>
             Lead Product Designer &middot; UX / UI / Front-end &middot; 2017
           </Caption>
-        </ContentSection>
+        </MarginBottomM>
 
         <FullImageSection
           src="https://cdn-images-1.medium.com/max/2000/1*fGZAAXYFhoKVBv_PJGbUuA.png"
           caption="New order on hold workflow (2017)"
         />
 
-        <SmallTextSection
+        <TextSectionSub
           header="The Challenge"
           content={
             <div>
@@ -62,11 +67,11 @@ class OrdersProjectPage extends React.Component {
             <div>
               <Paragraph>
                 My initial hypothesis was:&nbsp;
-                <ItalicSpan>
+                <Span italic>
                   “If we made the Order status 
                   prominent and comprehensive, users could use 
                   that information to take pertinent actions.” &nbsp; 
-                </ItalicSpan>
+                </Span>
                 A dozen user interviews later,
                 we learned this was false.
               </Paragraph>
@@ -85,13 +90,21 @@ class OrdersProjectPage extends React.Component {
             </div>
           }
         />
-        
-        <PairImageSection 
-          src_left="https://cdn-images-1.medium.com/max/2000/1*J2NKYsrN_4mxMbCEymCanA.jpeg"
-          caption_left="Affinity map of user interview insights"
+        <ImageSection
+          src="https://cdn-images-1.medium.com/max/1200/1*EW3qR3352dv5M_6ymei-7w.jpeg"
+        />
 
-          src_right="https://cdn-images-1.medium.com/max/2000/1*Obi0br-pktuxFOdzoreccQ.jpeg"
-          caption_right="Categorizing our brainstorm"
+        <ImageSection
+          src="https://cdn-images-1.medium.com/max/1200/1*1MZQ08U2ltuhotRDiUCahg.jpeg"
+        />
+        <ImageSection 
+          src="https://cdn-images-1.medium.com/max/2000/1*J2NKYsrN_4mxMbCEymCanA.jpeg"
+          caption="Affinity map of user interview insights"
+        />
+
+        <ImageSection 
+          src="https://cdn-images-1.medium.com/max/2000/1*Obi0br-pktuxFOdzoreccQ.jpeg"
+          caption="Categorizing our brainstorm"
         />
 
         <TextSection
@@ -100,14 +113,14 @@ class OrdersProjectPage extends React.Component {
               <Paragraph>
                 After brainstorming, we identified the following opportunity:
               </Paragraph>
-              <SmallPrimary>
+              <Header small>
                 How might we form an issue resolution workflow that minimizes effort and saves time?
-              </SmallPrimary>
+              </Header>
             </div>
           }
         />
 
-        <SmallTextSection
+        <TextSectionSub
           header="Initial Exploration"
           content={
             <Paragraph>
@@ -128,7 +141,7 @@ class OrdersProjectPage extends React.Component {
           caption="Sketches of life of an order"
         />
         
-        <SmallTextSection 
+        <TextSectionSub 
           header="Making notifications actionable"
           content={
             <Paragraph>
@@ -165,7 +178,7 @@ class OrdersProjectPage extends React.Component {
           caption="Efficient on hold system"
         />
 
-        <SmallTextSection 
+        <TextSectionSub 
           header="Consolidated and organized"
           content={
             <Paragraph>
@@ -182,7 +195,7 @@ class OrdersProjectPage extends React.Component {
           caption="Efficient on hold system"
         />
   
-        <SmallTextSection 
+        <TextSectionSub 
           header="Guiding and obvious"
         />
 
@@ -191,7 +204,7 @@ class OrdersProjectPage extends React.Component {
           caption="Hold issue indicates what orders are affected"
         />
 
-        <SmallTextSection 
+        <TextSectionSub 
           header="Flexible and forgiving"
         />
 

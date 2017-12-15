@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-import { ContentSection, Page } from '../atoms/Spacing';
-import { SmallHeader } from '../atoms/Typography';
+import MarginBottomS from './MarginBottomS';
+import Page from './Page';
+import Header from './Header';
 import { LinkHeader } from './Buttons';
 
 const Chrome = (props) => (
   <Page padded='very'>
-    <ContentSection text>
+    <MarginBottomS text>
       <Link to='/'>
-        <SmallHeader>
+        <Header link>
           <LinkHeader>Andrea Deng</LinkHeader>
-        </SmallHeader>
+        </Header>
       </Link>
-    </ContentSection>
+    </MarginBottomS>
     {props.children}
   </Page>
 );

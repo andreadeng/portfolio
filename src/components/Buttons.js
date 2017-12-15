@@ -1,13 +1,15 @@
 import styled from 'styled-components';
-import { MediumHeader } from '../atoms/Typography';
+import Header from './Header';
+
+import textColor from '../atoms/textColor';
 
 const LinkBody = styled.span`
   color: #212121;
-  border-bottom: 1px solid #536DFE;
+  border-bottom: 1px solid ${textColor.brand};
   
   &:hover {
-    color: #536DFE;
-    border-bottom: 1px solid #536DFE;
+    color: ${textColor.brand};
+    border-bottom: 1px solid ${textColor.brand};
     transition: all .3s ease;
   }
 `;
