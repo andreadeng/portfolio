@@ -90,7 +90,7 @@ class SpProjectPage extends React.Component {
           }
         />
         <ImageSection
-          src="https://cdn-images-1.medium.com/max/1600/1*swGDvlcvS1p6EZX1mGw2Qg.png"
+          src="https://cdn-images-1.medium.com/max/2000/1*6v6VJSuCJyzBbIkUK7W_vg.png"
         />
 
         <TextSectionSub
@@ -104,7 +104,7 @@ class SpProjectPage extends React.Component {
           }
         />
         <ImageSection
-          src="https://cdn-images-1.medium.com/max/1600/1*LUV63HhwKT_aoYAmmhUwKw.png"
+          src="https://cdn-images-1.medium.com/max/2000/1*yb-ImGspZVfa_04RuDsgbA.png"
         />
         
         <TextSectionSub
@@ -119,7 +119,7 @@ class SpProjectPage extends React.Component {
           }
         />
         <ImageSection
-          src="https://cdn-images-1.medium.com/max/1600/1*9GsmUEfp_TcoE4WBVgWUrA.png"
+          src="https://cdn-images-1.medium.com/max/2000/1*hnvT9lTmmcbslBXNkBaESg.png"
         />
 
 
