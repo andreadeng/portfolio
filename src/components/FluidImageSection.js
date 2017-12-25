@@ -19,8 +19,8 @@ function FluidImageSection(props) {
         <Grid>
           <Grid.Column only='tablet computer' width={2}>
           </Grid.Column>
-          <Grid.Column mobile={16} tablet={8} computer={8}>
-            <Caption italic centerA>
+          <Grid.Column mobile={16} tablet={12} computer={12}>
+            <Caption italic centered>
               {props.caption}
             </Caption>
           </Grid.Column>

@@ -11,7 +11,7 @@ import textColor from '../atoms/textColor';
 const Header = styled.h1`
   font-family: ${fontFamily.header};
   font-weight: ${fontWeight.bold};
-  color: ${textColor.primary};
+  color: ${props => props.branded ? `${textColor.brand}` : `${textColor.primary}`};
   line-height: ${lineHeight.default};
   margin-top: ${props => 
     (props.link && `${spacing.xs}`)
@@ -20,6 +20,7 @@ const Header = styled.h1`
 
   margin-bottom: ${props => 
     (props.small && `${spacing.xs}`)
+      || (props.xsmall && `${spacing.xs}`)
       || (props.medium && `${spacing.s}`)
       || (props.large && `${spacing.none}`)
       || (props.xlarge && `${spacing.none}`)

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import MarginBottomS from '../components/MarginBottomS';
 import MarginBottomM from '../components/MarginBottomM';
 import TextSection from '../components/TextSection'; 
 import TextSectionSub from '../components/TextSectionSub'; 
@@ -27,7 +28,7 @@ class SpProjectPage extends React.Component {
           </Caption>
         </MarginBottomM>
         <FullImageSection
-          src="https://cdn-images-1.medium.com/max/2000/1*dsW4EQJ99LXLgYDiDBQjzA.png"
+          src="https://cdn-images-1.medium.com/max/2000/1*qJ1Wh8wo97axeJQ1x9WvzQ.png"
         />
         <TextSection
           header="The Challenge"
@@ -35,51 +36,37 @@ class SpProjectPage extends React.Component {
             <div>
               <Paragraph>
                 In just three years since 2014, Scalable Press had 
-                evolved from a small screen print service to a 
+                evolved from a small screen printer to a 
                 national fulfillment network. By 2017, 1 in 6 people 
-                in the U.S. owned a shirt printed by the SF-based startup.
+                in the U.S. owned a shirt printed by the SF-based fulfillment startup. 
+                However, our online platform struggled to scale 
+                with the company’s rapid growth.
               </Paragraph>
+              
               <Paragraph>
-                The Scalable Press website where customers manage 
-                their orders and invoices, struggled to scale 
-                with the company’s rapid growth. Tacked on 
-                features competed for focus and inconsistent 
-                interfaces hindered future development.
-              </Paragraph>
-              <Paragraph>
-                The redesign of Scalable Press web is 
-                about creating a design system for our web experience 
-                which would present all of our features as a
-                powerful, quality platform.
+                I led the redesign of Scalable Press web from May to 
+                August 2017, creating a design system to present all of our 
+                features as a powerful, quality platform. 
+                I collaborated with another Product Designer, 3 Full Stack Engineers, 
+                and a Product Manager. 
               </Paragraph>
             </div>
           }
         />
 
-        <TextSectionSub
-          header="My role"
-          content= {
-            <Paragraph>
-              I led the Scalable Press web app re-design from May to August 2017 to address usability issues and establish design patterns that enable future projects to be easily built with speed and quality. I owned the design process from User Research to implementation and collaborated with another designer on the Home page. In addition, I worked alongside 3 Full Stack Engineers and a Product Manager who joined near the end of the project.
-            </Paragraph>
-          }
-        />
         <TextSection
           header="Problems with Scalable Press web"
           content= {
             <Paragraph>
-              We did usability testing of Scalable Press web 
-              with 10 existing users. Combined with insights from user
-              and sales interviews from the past few months, we organized
-              the pain points into three overarching themes to guide
-              our endeavor.
+              We organized the pain points discovered through usability testing
+              into three overarching themes.
             </Paragraph>
           }
         />
 
 
         <TextSectionSub
-          header="1. Tangled navigation"
+          header="Tangled navigation"
           content= {
             <Paragraph>
               Scalable Press is home to manual orders placed via Scalable Press web 
@@ -94,7 +81,7 @@ class SpProjectPage extends React.Component {
         />
 
         <TextSectionSub
-          header="2. Poor information hierarchy"
+          header="Poor information hierarchy"
           content= {
             <Paragraph>
               Users have a hard time finding what they need in a sea
@@ -108,7 +95,7 @@ class SpProjectPage extends React.Component {
         />
         
         <TextSectionSub
-          header="3. Fragmented experience"
+          header="Fragmented experiences"
           content= {
             <Paragraph>
               From branding to user flows to page formatting, there is
@@ -124,25 +111,26 @@ class SpProjectPage extends React.Component {
 
 
         <TextSection
-          header="Design system as a solution"
+          header="Design system as a solution to a bigger problem"
           content= {
             <div>
               <Paragraph>
-                During our brainstorming sessions, we realized that
-                many of the problems in Scalable Press web was the lack
-                of a source of truth.
+                During our brainstorming sessions, we realized
+                the need to unify not only existing features but also future ones.
+                Our products were currently built using Semantic UI, 
+                a front-end framework that quickly got sites
+                up and running but became a nightmare 
+                to customize to our growing needs.
               </Paragraph>
               <Paragraph>
-                We had been discussing the need for a design system
-                as our list of features and products were growing.
-                The Scalable Press web redesign posed an
-                opportunity to drive design system creation and testing.
-              </Paragraph>
-              <Paragraph>
-                We set out to create a roadmap to define the system’s 
-                direction without drowning in detail. After 
-                doing a UI inventory of Scalable Press web, 
-                we organized them by importance.
+                After researching and testing out other frameworks, 
+                it was clear there was no flexible framework.
+                We needed to build our own but did not 
+                have the bandwidth to tackle it all at once. 
+                Instead, we created a roadmap to gradually move off Semantic UI. 
+                The Scalable Press web redesign was an
+                opportunity to drive the creation and testing of the
+                Scalable Press design system. Instead, define the goals of your system, its target audience, and your MVP.
               </Paragraph>
             </div>
           }
@@ -156,64 +144,131 @@ class SpProjectPage extends React.Component {
         />
 
         <TextSection
-          header="V1: Making it scalable and flexible"
+          header="Working backwards from app-level solutions"
+          content= {
+            <Paragraph>
+              Building the framework while building the products that would use 
+              it helped us test and shape the design system. The continuous cycle of specific 
+              app-level solutions informing our framework-level 
+              decisions enabled us to explore all the boundaries of our system 
+              the deeper we got into the products.
+            </Paragraph>
+          }
+        />
+
+       
+        <FullImageSection
+          src="https://cdn-images-1.medium.com/max/2000/1*Br8IKnpSt_zaYt_OKCUpLg.png"
+          caption="Evolution of Scalable Press web iterations from top to bottom"
+        />
+
+        <TextSectionSub
+          header="Initial take on a design system"
           content= {
             <div>
               <Paragraph>
-                Building a scalable and flexible design and code 
-                framework that serves as the backbone of the internal 
-                tools suite and allows new web projects to easily be built with speed and quality.
-                Coding out the design system really forced me to think 
-                in components, pruning nonessential color variations, sizes, layouts, and UI. 
+                To optimize for speed, I coded out the basic patterns needed for 
+                Scalable Press web using Semantic UI. This helped me understand 
+                which parts of Semantic UI we relied on.
               </Paragraph>
             </div>
           }
         />
+
         <FullImageSection
-          src="https://cdn-images-1.medium.com/max/2000/1*z-ysAt6NHM2cDwLOL-L5fQ.png"
-        />
-        <FluidImageSection
-          src="https://cdn-images-1.medium.com/max/2000/1*ud2Sm5eT3fCeKXwUMdc4iQ.png"
-          caption="A sampling of components"
-        />
-        <FullImageSection
-          src="https://cdn-images-1.medium.com/max/2000/1*Thd05-8CqHiLlmxwOKGcEg.png"
-          caption="Billing explorations using Design System V1"
+          src="https://cdn-images-1.medium.com/max/2000/1*YsZItjaK3De4TMQYWKIchQ.png"
+          caption="Design system V1"
         />
 
+
         <TextSection
-          header="V2"
+          header="V2: Utility Classes"
           content= {
             <div>
               <Paragraph>
-                Insights from V1 from user testing with engineers, designers, 
-                marketing was the need to know when to use what component. 
-                WHEN TO USE WHAT COMPONENT???!?!?!
+                The first elements to move off of Semantic UI was spacing and 
+                responsive typography. We created utility classes of our spacing sizes 
+                and font-sizes to combat the Semantic UI margin/padding variations 
+                in a consistent and clean way.                
+              </Paragraph>
+              
+            </div>
+          }
+        />
+        <FullImageSection
+          src="https://cdn-images-1.medium.com/max/2000/1*Kwi8a7Lm7DQ5drGY6Xrc3Q.png"
+        />
 
-                While the master Sketch file was great for copying and 
-                pasting assets, the interaction rules and best practices 
-                for each component was still tribal knowledge within the team. 
-                Soon, the design team encountered many questions around small 
-                implementation details from the engineer teams, which 
-                required every use case to be accounted for.
-
+        <TextSection
+          header="V3: Detailed documentation"
+          content= {
+            <div>
+              <Paragraph>
+                While the master Sketch file and 
+                utility classes created some standardization, the interaction rules 
+                and best practices for each component was still tribal knowledge.                
+              </Paragraph>
+              <Paragraph>
                 To help design more efficiently with engineering, 
-                I began working on the second version of the design 
+                I began working on the third version of the design 
                 system which has much more detailed documentation for each UI pattern.
               </Paragraph>
             </div>
           }
         />
         <FullImageSection
-          src="https://cdn-images-1.medium.com/max/2000/1*y8Tlqeo_OrLZ7IXT2RClMA.png"
+          src="https://cdn-images-1.medium.com/max/2000/1*bxvKRkf_Xrosk222ad6obQ.png"
+          caption="Button pattern overview"
+        />
+        
+
+        <MarginBottomS text>
+          <Header medium>
+            Introducing the new Scalable Press 
+          </Header>
+        </MarginBottomS>
+        
+        <MarginBottomS text>
+          <Header small>
+            Streamlined navigation
+          </Header>
+        </MarginBottomS>
+
+        <FullImageSection
+          src="https://cdn-images-1.medium.com/max/2000/1*Qb1yvPB4slX_8Ju9OeEixQ.png"
+          caption="New navigation pattern (2017)"
+        />
+         
+        
+        <TextSectionSub
+          header="Strengthened visual hierachy"
+          content= {
+            <div>
+              <Paragraph>
+                We strengthened visual hierarchy, clearly emphasizing important 
+                information such as “order number” and “estimated ship date”. 
+                Available actions such as “Track package” and editing the shipping 
+                address/method are also easily distinguishable. Order details 
+                such as the back print, size, and quantity are quick to find 
+                at a glance and not cluttered.
+              </Paragraph>
+            </div>
+          }
         />
 
+        <FullImageSection
+          src="https://cdn-images-1.medium.com/max/2000/1*HWr4ZZj3Hq9ZVRgANAN4KA.png"
+          caption="Strengthened visual hierarchy (2017)"
+        />
         <TextSectionSub
           header="Unified Experience"
           content= {
             <div>
               <Paragraph>
-                Hello
+                Our extensive set of visual and interaction patterns 
+                made the learning curve easier with each additional product. Consistent 
+                layout, typescale, colors, interaction patterns contributed to a calm rhythm that
+                helped users focus.
               </Paragraph>
             </div>
           }
@@ -229,7 +284,8 @@ class SpProjectPage extends React.Component {
           content= {
             <div>
               <Paragraph>
-                Hello
+                As we added more to our design system, we were able to spend less time 
+                cranking out pixel perfect mocks and more time collorating to solve bigger problems.
               </Paragraph>
             </div>
           }
@@ -239,18 +295,33 @@ class SpProjectPage extends React.Component {
         />
 
         <TextSection
-          header="Things I learned"
+          header="Results and Reflection"
           content= {
             <div>
-              <Header small>
-                1. To prioritize experience over features
-              </Header>
               <Paragraph>
-                A startup means you have to make hard calls. You have 
-                to decide what to cut out to ship on time. 
-                We learnt this balance— while still sticking to 
-                quality. It worked well because people responded 
-                to our difference in quality.
+                The component libraries enabled designers to create mocks in a 
+                third of the time, enabling us to focus
+                product problems as opposed to fixing color discrepancies. 
+                Now with resuable components and utility classes, engineers 
+                could accurate implement design specs and spent half the time doing so. 
+                Members of engineering, design, and even marketing 
+                came up to me to indicate how much time the design system had saved them.
+                They also felt motivated knowing they are working on building 
+                a cohesive experience.
+              </Paragraph>
+              <Paragraph>
+                This project demonstrated how we could build a better product 
+                in shorter amount of time by working collaboratively. 
+                This was especially true as there
+                were so many different stakeholders.
+                While there was a lot of cross-department collaboration 
+                in the ideation, prototyping, and implementation phases, 
+                it would have been beneficial for other team members to 
+                conduct usability testing. In the future, I want to bring 
+                engineering and design closer by having engineers participate 
+                in user research from the start. This would help build 
+                empathy for the users, the problem, and the design team 
+                and greater ownership in the product.
               </Paragraph>
             </div>
           }

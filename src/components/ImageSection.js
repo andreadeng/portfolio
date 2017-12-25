@@ -21,7 +21,7 @@ function ImageSection(props) {
             <Grid.Column only='computer' width={2}>
             </Grid.Column>
             <Grid.Column mobile={16} computer={12}>
-              <Caption italic>
+              <Caption italic centered>
                 {props.caption}
               </Caption>
             </Grid.Column>

@@ -4,12 +4,12 @@ import Header from './Header';
 import textColor from '../atoms/textColor';
 
 const LinkBody = styled.span`
-  color: #212121;
+  color: ${textColor.brand};
   border-bottom: 1px solid ${textColor.brand};
   
   &:hover {
-    color: ${textColor.brand};
-    border-bottom: 1px solid ${textColor.brand};
+    color: ${textColor.brandDarker};
+    border-bottom: 1px solid ${textColor.brandDarker};
     transition: all .3s ease;
   }
 `;

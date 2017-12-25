@@ -22,7 +22,7 @@ class HomePage extends React.Component {
             <Grid.Column width={14}>
               <Paragraph>
                 I’m a Product Designer in San Francisco 
-                and have previously worked at &nbsp;
+                and have previously worked at&nbsp;
                 
                 <a href="https://scalablepress.com/" target="_blank">
                   <LinkBody>
@@ -36,14 +36,20 @@ class HomePage extends React.Component {
                   </LinkBody>
                 </a>
                 ,&nbsp;and&nbsp;
-                <a href="https://viaprograms.org/.com/" target="_blank">
+                <a href="https://viaprograms.org/expand-your-boundaries/social-innovation-design-thinking/" target="_blank">
                   <LinkBody>
                     VIA
                   </LinkBody>
                 </a>
                 .&nbsp;
-                I believe in technology's potential for good. I use my background in cognitive and social psychology to design solutions
-                that speak to our humanity.
+                I use my multidisciplinary background in psychology, computer science, and 
+                entrepreneurship to uncover opportunities that create the most value.
+                &nbsp;
+                <Link to="/about">
+                  <LinkHeader>
+                    Read more
+                  </LinkHeader>
+                </Link>
               </Paragraph>
             </Grid.Column>
             <Grid.Column width={2}>
@@ -72,7 +78,7 @@ class HomePage extends React.Component {
 
         <MarginBottomM text>
           <Link to="/sp-project-page">
-            <Image src='https://cdn-images-1.medium.com/max/2000/1*dsW4EQJ99LXLgYDiDBQjzA.png' fluid />
+            <Image src='https://cdn-images-1.medium.com/max/2000/1*qJ1Wh8wo97axeJQ1x9WvzQ.png' fluid />
             <Header link>
               <LinkHeader>
                 Unifying Scalable Press web
@@ -83,14 +89,13 @@ class HomePage extends React.Component {
             </Caption>
           </Link>
         </MarginBottomM>
-        
 
         <MarginBottomM text>
-          <Link to="/project-page">
-            <Image src='https://cdn-images-1.medium.com/max/1000/1*b6gyJahydn-TD553zGSybg.png' fluid />
+          <Link to="/teechip-project-page">
+            <Image src='https://cdn-images-1.medium.com/max/2000/1*4AUIVpuqEZLZXDFlyt1X2Q.png' fluid />
             <Header link>
               <LinkHeader>
-                TeeChip Dashboard
+                Renovating the seller experience
               </LinkHeader>
             </Header>
             <Caption>
@@ -98,6 +103,21 @@ class HomePage extends React.Component {
             </Caption>
           </Link>
         </MarginBottomM>
+
+        <MarginBottomM text>
+          <Link to="/binder-project-page">
+            <Image src='http://andreadeng.github.io/img/binder_promo.jpg' fluid />
+            <Header link>
+              <LinkHeader>
+                Binder: Augmented note-taking app
+              </LinkHeader>
+            </Header>
+            <Caption>
+              Product Designer &middot; Berkeley Innovation / Vertigo Software, Inc. &middot; 2013
+            </Caption>
+          </Link>
+        </MarginBottomM>
+        
       </div>
     );
   }
