@@ -8,6 +8,7 @@ import OrdersProjectPage from './pages/OrdersProjectPage';
 import SpProjectPage from './pages/SpProjectPage';
 import TeeChipProjectPage from './pages/TeeChipProjectPage';
 import BinderProjectPage from './pages/BinderProjectPage';
+import YumiProjectPage from './pages/YumiProjectPage';
 import AboutPage from './pages/AboutPage';
 import './index.css';
 
@@ -21,6 +22,7 @@ class Portfolio extends React.Component {
           <Route path="sp-project-page" component={SpProjectPage} />
           <Route path="teechip-project-page" component={TeeChipProjectPage} />
           <Route path="binder-project-page" component={BinderProjectPage} />
+          <Route path="yumi-project-page" component={YumiProjectPage} />
           <Route path="about" component={AboutPage} />
         </Route>
       </Router>

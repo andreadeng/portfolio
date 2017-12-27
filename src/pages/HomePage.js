@@ -95,11 +95,25 @@ class HomePage extends React.Component {
             <Image src='https://cdn-images-1.medium.com/max/2000/1*4AUIVpuqEZLZXDFlyt1X2Q.png' fluid />
             <Header link>
               <LinkHeader>
-                Renovating the seller experience
+                Renovating the ecommerce experience
               </LinkHeader>
             </Header>
             <Caption>
               Product Designer &middot; Scalable Press &middot; 2017
+            </Caption>
+          </Link>
+        </MarginBottomM>
+
+        <MarginBottomM text>
+          <Link to="/yumi-project-page">
+            <Image src='https://andreadeng.github.io/img/yumi_promo.jpg' fluid />
+            <Header link>
+              <LinkHeader>
+                YUMI: Eat together
+              </LinkHeader>
+            </Header>
+            <Caption>
+              Project Lead &middot; Technolgy Entrepreneurship Course &middot; 2016
             </Caption>
           </Link>
         </MarginBottomM>
