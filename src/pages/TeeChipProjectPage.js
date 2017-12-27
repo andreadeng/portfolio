@@ -1,4 +1,6 @@
 import React from 'react';
+import { Grid } from 'semantic-ui-react';
+
 import MarginBottomM from '../components/MarginBottomM';
 import MarginBottomS from '../components/MarginBottomS';
 import TextSection from '../components/TextSection'; 
@@ -13,7 +15,7 @@ import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
 import Caption from '../components/Caption';
 import Span from '../components/Span';
-import { LinkBody } from '../components/Buttons';
+import { LinkBody, LinkHeader } from '../components/Buttons';
 
 
 class TeeChipProjectPage extends React.Component {
@@ -34,6 +36,9 @@ class TeeChipProjectPage extends React.Component {
         />
 
         <MarginBottomM text>
+          <Header medium>
+            The Brief
+          </Header>
           <Paragraph>
             TeeChip is a platform for selling custom products 
             by leveraging crowd funding and social media. 
@@ -45,12 +50,7 @@ class TeeChipProjectPage extends React.Component {
           <Paragraph>
             Since launching in 2014, TeeChip has reached a point 
             where it needed a complete overhaul to cater to its 
-            growing seller base and pay down product debt. I worked 
-            closely with Raymond Lei, the founder and CEO of the 
-            company, sellers on the site, and four engineers to 
-            re-imagine the selling experience. The new TeeChip seller 
-            dashboard and buyer experience, coined TeeChip Pro, 
-            launched globally on April, 2017.
+            growing seller base and pay down product debt. 
           </Paragraph>
           <Paragraph italic>
             To comply with my non-disclosure agreement, I have omitted 
@@ -60,11 +60,21 @@ class TeeChipProjectPage extends React.Component {
           </Paragraph>
         </MarginBottomM>
 
-        <MarginBottomS text>
+        <MarginBottomM text>
           <Header medium>
-            Get to know the community
+            My Role
           </Header>
-        </MarginBottomS>
+          <Paragraph>
+            I led the design process from user research to implementation 
+            to build a new seller dashboard experience. I worked
+            closely with Raymond Lei, the founder and CEO of the 
+            company, sellers, and four engineers to 
+            re-imagine the selling experience. The new TeeChip seller 
+            dashboard and buyer experience, coined TeeChip Pro, 
+            launched globally on April, 2017.
+          </Paragraph>
+        </MarginBottomM>
+
 
         <FullImageSection
           src="https://cdn-images-1.medium.com/max/2000/1*k3HKeaycveBZ3dTq8irxIA.png"
@@ -72,18 +82,22 @@ class TeeChipProjectPage extends React.Component {
         />
 
         <MarginBottomM text>
+          <Header medium>
+            Get to know the community
+          </Header>
           <Paragraph>
             To kick off the design process I got connected to sellers 
-            through our TeeChip seller support team. I looked at over 
-            20 sellers and their storefronts or campaigns and noted any 
+            through our TeeChip seller support team. I interviewd over 
+            20 sellers about the seller experience. I also looked at their 
+            storefronts and campaigns and noted  
             patterns from what they chose to feature to how they position 
-            the product. I learned most of the sellers were young 
-            twenty-something year olds living in Vietnam who really hustled, 
-            aggressively selling, promoting, and hopping from our platform 
-            to competitors and back for the best promos and deals.
+            the product. I learned most of the sellers were males in their 20s 
+            living in Vietnam who hustled. They were
+            aggressively promoting and selling their products and hopping from our platform 
+            to ours competitors based on promos and deals.
           </Paragraph>
           <Paragraph>
-            TeeChip sellers are not interested in dealing with store 
+            I learned TeeChip sellers are not interested in dealing with store 
             setup and complicated e-commerce systems. They want a simple 
             way to set up an online store and start marketing their products 
             to the world immediately.
@@ -110,9 +124,10 @@ class TeeChipProjectPage extends React.Component {
         />
 
         <TextSection
-          header="The Campaign Creation Flow"
+          header="Campaign Creation: Fast and Comprehensive"
           content={
             <Paragraph>
+              The Campaign Creation Flow was a core part of the seller experience. 
               I tested the existing TeeChip create campaign 
               flow with 5 participants in person. My objective 
               was to understand the user goals.
@@ -132,11 +147,19 @@ class TeeChipProjectPage extends React.Component {
         />
       
         <MarginBottomM text>
-          <Header medium>
+          <Header small>
             Introducing new campaign creation flow
           </Header>
+          <Header xsmall>
+            <a href="https://pro.teechip.com/manager/campaigns/create/product" target="_blank">
+              <LinkHeader>
+                See it live
+              </LinkHeader>
+            </a>   
+          </Header>
         </MarginBottomM>
-        
+
+
         <TextSectionSub 
           header="Knowing product offerings upfront"
           content={
@@ -187,7 +210,45 @@ class TeeChipProjectPage extends React.Component {
         />
 
         <TextSection
-          header="The Buyer Experience"
+          header="Analytics: Determine the future"
+          content={
+            <div>
+              <Paragraph>
+                Sellers are constantly trying to figure out what is selling successfully. 
+                Big picture analytics about when sales are higher can provide a lot of insight 
+                as to when to release ads. Specific campaign and storefront level analytics 
+                provide insight into how one campaign may be doing better. The analytics also 
+                encourage sellers to experiment more with descriptions, images, and more variations. 
+              </Paragraph>
+              <Paragraph>
+                The goal of the analytics is to help sellers make decisions which items they should invest their time. 
+                We want to help sellers know what to make next and predict future trends to grow their business.
+              </Paragraph>
+            </div>
+          }
+        />
+
+        <MarginBottomM>
+          <Grid>
+            <Grid.Column only='tablet computer' width={1}>
+            </Grid.Column>
+            <Grid.Column mobile={16} tablet={12} computer={14}>
+              <iframe width="100%" height="550" 
+                src="https://www.youtube.com/embed/OCKvwjLXpWY?rel=0&amp;showinfo=0" 
+                frameborder="0" gesture="media" allow="encrypted-media" 
+                allowfullscreen>
+              </iframe>
+            </Grid.Column>
+            <Grid.Column only='tablet computer' width={1}>
+            </Grid.Column>
+          </Grid>
+          <Caption italic centered>
+            Live analytics on new seller dashboard
+          </Caption>
+        </MarginBottomM>
+
+        <TextSection
+          header="Buyer Experience: Building trust"
           content={
             <Paragraph>
               I tested the existing TeeChip experience with 10
@@ -210,7 +271,7 @@ class TeeChipProjectPage extends React.Component {
         </MarginBottomS>
 
         <MarginBottomM text>
-          <Header medium>
+          <Header small>
             Introducing new buyer experience
           </Header>
         </MarginBottomM>
@@ -269,7 +330,7 @@ class TeeChipProjectPage extends React.Component {
             <Paragraph>
               Within a month of launching the redesigned seller dashboard 
               and buyer site, sales on the platform surpassed that of 
-              the legacy TeeChip site. The success is attributed to all 
+              the legacy TeeChip site and increased by 40% after 3 months of launch. The success is attributed to all 
               the hard work cross-department to create a more unified 
               experience for everyone that will scale as TeeChip continues to grow.
             </Paragraph>
