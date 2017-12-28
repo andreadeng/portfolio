@@ -36,6 +36,15 @@ class AboutPage extends React.Component {
             and feel about technology. My vision is to unleash a 
             person’s potential by designing tools that empower.
           </Paragraph>
+          <Paragraph>
+            Take a look at my&nbsp;
+            <a href="https://www.dropbox.com/s/776nhv4b9me87i0/Andrea_Resume.12.28.17.pdf?dl=0" target="_blank">
+              <LinkBody>
+                resume
+              </LinkBody>
+            </a>
+            .
+          </Paragraph>
         </MarginBottomM>
         <MarginBottomM text>
           <Header small>
@@ -48,7 +57,15 @@ class AboutPage extends React.Component {
                 im.andreadeng@gmail.com
               </LinkBody>
             </a>
+            &nbsp;or connect on&nbsp;
+            <a href="https://www.linkedin.com/in/andreadeng/" target="_blank">
+              <LinkBody>
+                LinkedIn
+              </LinkBody>
+            </a>
+            .
           </Paragraph>
+
         </MarginBottomM>
       </div>
     );
