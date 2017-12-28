@@ -113,7 +113,7 @@ class HomePage extends React.Component {
               </LinkHeader>
             </Header>
             <Caption>
-              Project Lead &middot; Technolgy Entrepreneurship Course &middot; 2016
+              Project Lead &middot; Technology Entrepreneurship Course &middot; 2016
             </Caption>
           </Link>
         </MarginBottomM>
