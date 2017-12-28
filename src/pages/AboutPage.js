@@ -6,7 +6,7 @@ import MarginBottomM from '../components/MarginBottomM';
 import MarginBottomS from '../components/MarginBottomS';
 import ImageSection from '../components/ImageSection';
 import Span from '../components/Span';
-
+import { LinkBody } from '../components/Buttons';
 
 class AboutPage extends React.Component {
   render() {
@@ -43,9 +43,11 @@ class AboutPage extends React.Component {
           </Header>
           <Paragraph>
             Email me at&nbsp;
-            <Span strong primary>
-              im.andreadeng@gmail.com
-            </Span>
+            <a href="mailto:im.andreadeng@gmail.com">
+              <LinkBody>
+                im.andreadeng@gmail.com
+              </LinkBody>
+            </a>
           </Paragraph>
         </MarginBottomM>
       </div>
