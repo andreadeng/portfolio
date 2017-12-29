@@ -25,7 +25,7 @@ class BinderProjectPage extends React.Component {
         </MarginBottomM>
 
         <FullImageSection
-          src="http://andreadeng.github.io/img/binder_promo.jpg"
+          src="https://cdn-images-1.medium.com/max/2000/1*BAZsAWF2_TiNduMkoEjzcw.jpeg"
           caption=""
         />
 
@@ -69,7 +69,7 @@ class BinderProjectPage extends React.Component {
         </MarginBottomM>
 
         <ImageSection 
-          src="http://andreadeng.github.io/img/launch.jpg"
+          src="https://cdn-images-1.medium.com/max/1600/1*8C8WPRFwaO9B8NiY5apWig.jpeg"
           caption="Crowded Launch Festival conference in San Francisco"
         />
         <TextSection 
@@ -113,7 +113,7 @@ class BinderProjectPage extends React.Component {
         />
 
         <ImageSection
-          src="http://andreadeng.github.io/img/binder/2.jpg"
+          src="https://cdn-images-1.medium.com/max/800/1*NGh2QP5uyo2WIiYL9OYbKw.jpeg"
           caption=""
         />
 
@@ -135,7 +135,7 @@ class BinderProjectPage extends React.Component {
         />
 
         <ImageSection
-          src="http://andreadeng.github.io/img/binder/3.jpg"
+          src="https://cdn-images-1.medium.com/max/800/1*AJtYauxDUZJSunr-rZhi2A.jpeg"
           caption=""
         />
 
@@ -152,7 +152,7 @@ class BinderProjectPage extends React.Component {
         />
 
         <ImageSection
-          src="http://andreadeng.github.io/img/binder/5.jpg"
+          src="https://cdn-images-1.medium.com/max/800/1*MiAoIUU7ECPvuhnLVLkxWg.jpeg"
           caption=""
         />
 
@@ -203,7 +203,7 @@ class BinderProjectPage extends React.Component {
         />
 
         <ImageSection
-          src="http://andreadeng.github.io/img/binder_team.jpg"
+          src="https://cdn-images-1.medium.com/max/1600/1*3-BYPSFL3pRPyPKf0ITEyw.jpeg"
           caption="Binder team with Tony Sokolowski, VP of Design at Vertigo, who worked with us throughout the project"
         />
 

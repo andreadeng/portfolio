@@ -23,7 +23,7 @@ class YumiProjectPage extends React.Component {
         </MarginBottomM>
 
         <FullImageSection
-          src="https://andreadeng.github.io/img/yumi_promo.jpg"
+          src="https://cdn-images-1.medium.com/max/1600/1*1FIQk3-YHKlvoxEG_MsI3g.jpeg"
           caption=""
         />
 
@@ -112,9 +112,9 @@ class YumiProjectPage extends React.Component {
         </MarginBottomM>
 
         <PairImageSection
-          src_left="https://andreadeng.github.io/img/yumi_sketch2.jpg"
+          src_left="https://cdn-images-1.medium.com/max/1200/1*1Y_hZlYdshV7bbCphwHXpw.jpeg"
           caption_left="Sketches of matching"
-          src_right="https://andreadeng.github.io/img/yumi_sketch3.jpg"
+          src_right="https://cdn-images-1.medium.com/max/1200/1*m4p6IOjkTyEIP8NnIIJd3Q.jpeg"
           caption_right="Sketches of chat"
         />
 
@@ -137,7 +137,7 @@ class YumiProjectPage extends React.Component {
         </MarginBottomM>
 
         <ImageSection
-          src="https://andreadeng.github.io/img/yumi_v1-all.png"
+          src="https://cdn-images-1.medium.com/max/1600/1*14GdBbmEnphNYYnSj4kLEg.png"
           caption="V1 mid-fidelity mockups"
         />
 
@@ -160,7 +160,7 @@ class YumiProjectPage extends React.Component {
         </MarginBottomM>
 
         <ImageSection
-          src="https://andreadeng.github.io/img/yumi_v2-all.png"
+          src="https://cdn-images-1.medium.com/max/1600/1*zDRj3j10xYhuglx7OuOBRA.png"
           caption="V2 mid-fidelity mockups"
         />
 

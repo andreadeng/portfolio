@@ -105,7 +105,7 @@ class HomePage extends React.Component {
 
         <MarginBottomM text>
           <Link to="/yumi-project-page">
-            <Image src='https://andreadeng.github.io/img/yumi_promo.jpg' fluid />
+            <Image src='https://cdn-images-1.medium.com/max/1600/1*1FIQk3-YHKlvoxEG_MsI3g.jpeg' fluid />
             <Header link>
               <LinkHeader>
                 YUMI: Eat together
@@ -119,7 +119,7 @@ class HomePage extends React.Component {
 
         <MarginBottomM text>
           <Link to="/binder-project-page">
-            <Image src='http://andreadeng.github.io/img/binder_promo.jpg' fluid />
+            <Image src='https://cdn-images-1.medium.com/max/2000/1*BAZsAWF2_TiNduMkoEjzcw.jpeg' fluid />
             <Header link>
               <LinkHeader>
                 Binder: Augmented note-taking app
