@@ -3,17 +3,12 @@ import React from 'react';
 import MarginBottomM from '../components/MarginBottomM';
 import TextSection from '../components/TextSection'; 
 import TextSectionSub from '../components/TextSectionSub'; 
-import NumList from '../components/NumList'; 
 import ImageSection from '../components/ImageSection';
-import PairImageSection from '../components/PairImageSection';
-import TrioImageSection from '../components/TrioImageSection'; 
-import QuadImageSection from '../components/QuadImageSection'; 
 import FullImageSection from '../components/FullImageSection';
 import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
 import Caption from '../components/Caption';
-import Span from '../components/Span';
-import { LinkBody, LinkHeader } from '../components/Buttons';
+import { LinkHeader } from '../components/Buttons';
 
 
 class BinderProjectPage extends React.Component {
@@ -43,7 +38,7 @@ class BinderProjectPage extends React.Component {
             in a digestible and shareable format.
           </Paragraph>
           <Header xsmall>
-            <a href="https://www.behance.net/gallery/13336431/Binder-A-Second-Screen-Tablet-Application" target="_blank">
+            <a href="https://www.behance.net/gallery/13336431/Binder-A-Second-Screen-Tablet-Application" target="_blank" rel="noopener noreferrer">
               <LinkHeader>
                 View process
               </LinkHeader>
@@ -102,7 +97,7 @@ class BinderProjectPage extends React.Component {
           }
         />
         <MarginBottomM text>
-          <iframe class="marvel" src="https://marvelapp.com/ga1g8j?emb=1" width="100%" height="600" allowtransparency="true" frameborder="0"></iframe>
+          <iframe className="marvel" src="https://marvelapp.com/ga1g8j?emb=1" width="100%" height="600" allowtransparency="true" frameBorder="0" title="Project demo"></iframe>
         </MarginBottomM>
 
         <TextSectionSub
@@ -214,7 +209,7 @@ class BinderProjectPage extends React.Component {
 
         <MarginBottomM text>
           <Header xsmall>
-              <a href="https://www.behance.net/gallery/13336431/Binder-A-Second-Screen-Tablet-Application" target="_blank">
+              <a href="https://www.behance.net/gallery/13336431/Binder-A-Second-Screen-Tablet-Application" target="_blank" rel="noopener noreferrer">
                 <LinkHeader>
                   View process
                 </LinkHeader>

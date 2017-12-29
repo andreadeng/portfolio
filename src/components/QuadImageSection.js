@@ -1,15 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Container } from 'semantic-ui-react';
 import { Grid } from 'semantic-ui-react';
 import { Image } from 'semantic-ui-react';
 
 import MarginBottomS from './MarginBottomS'; 
 import MarginBottomM from './MarginBottomM'; 
 import Caption from './Caption'; 
-import Paragraph from './Paragraph'; 
 import Span from './Span'; 
-
 
 function QuadImageSection(props) {
   return (

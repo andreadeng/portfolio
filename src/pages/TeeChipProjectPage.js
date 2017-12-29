@@ -7,15 +7,11 @@ import TextSection from '../components/TextSection';
 import TextSectionSub from '../components/TextSectionSub'; 
 import NumList from '../components/NumList'; 
 import ImageSection from '../components/ImageSection';
-import PairImageSection from '../components/PairImageSection';
-import TrioImageSection from '../components/TrioImageSection'; 
-import QuadImageSection from '../components/QuadImageSection'; 
 import FullImageSection from '../components/FullImageSection';
 import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
 import Caption from '../components/Caption';
-import Span from '../components/Span';
-import { LinkBody, LinkHeader } from '../components/Buttons';
+import { LinkHeader } from '../components/Buttons';
 
 
 class TeeChipProjectPage extends React.Component {
@@ -151,7 +147,7 @@ class TeeChipProjectPage extends React.Component {
             Introducing new campaign creation flow
           </Header>
           <Header xsmall>
-            <a href="https://pro.teechip.com/manager/campaigns/create/product" target="_blank">
+            <a href="https://pro.teechip.com/manager/campaigns/create/product" target="_blank" rel="noopener noreferrer">
               <LinkHeader>
                 See it live
               </LinkHeader>
@@ -233,10 +229,15 @@ class TeeChipProjectPage extends React.Component {
             <Grid.Column only='tablet computer' width={1}>
             </Grid.Column>
             <Grid.Column mobile={16} tablet={12} computer={14}>
-              <iframe width="100%" height="550" 
-                src="https://www.youtube.com/embed/OCKvwjLXpWY?rel=0&amp;showinfo=0" 
-                frameborder="0" gesture="media" allow="encrypted-media" 
-                allowfullscreen>
+              <iframe
+                allow="encrypted-media"
+                allowFullScreen
+                frameBorder="0"
+                gesture="media"
+                height="550px"
+                src="https://www.youtube.com/embed/OCKvwjLXpWY?rel=0&amp;showinfo=0"
+                title="TeeChip analytics video"
+                width="100%">
               </iframe>
             </Grid.Column>
             <Grid.Column only='tablet computer' width={1}>

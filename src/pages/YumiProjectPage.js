@@ -1,20 +1,13 @@
 import React from 'react';
 
 import MarginBottomM from '../components/MarginBottomM';
-import TextSection from '../components/TextSection'; 
-import TextSectionSub from '../components/TextSectionSub'; 
 import NumList6 from '../components/NumList6'; 
 import ImageSection from '../components/ImageSection';
 import PairImageSection from '../components/PairImageSection';
-import TrioImageSection from '../components/TrioImageSection'; 
-import QuadImageSection from '../components/QuadImageSection'; 
 import FullImageSection from '../components/FullImageSection';
 import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
 import Caption from '../components/Caption';
-import Span from '../components/Span';
-import { LinkBody, LinkHeader } from '../components/Buttons';
-
 
 class YumiProjectPage extends React.Component {
   render() {
@@ -187,7 +180,7 @@ class YumiProjectPage extends React.Component {
         </MarginBottomM>
 
         <MarginBottomM text>
-          <iframe class="marvel-iphone" src="https://marvelapp.com/17af897?emb=1" width="100%" height="580" allowtransparency="true" frameborder="0"></iframe>
+          <iframe class="marvel-iphone" src="https://marvelapp.com/17af897?emb=1" width="100%" height="580" allowtransparency="true" frameBorder="0" title="Prototype demo"></iframe>
         </MarginBottomM>
 
         <MarginBottomM text>
@@ -203,7 +196,7 @@ class YumiProjectPage extends React.Component {
         </MarginBottomM>
 
         <MarginBottomM text>
-          <iframe class="marvel-iphone" src="https://marvelapp.com/17afhh0?emb=1" width="100%" height="580" allowtransparency="true" frameborder="0"></iframe>
+          <iframe class="marvel-iphone" src="https://marvelapp.com/17afhh0?emb=1" width="100%" height="580" allowtransparency="true" frameBorder="0" title="Prototype settings demo"></iframe>
         </MarginBottomM>
 
         <MarginBottomM text>

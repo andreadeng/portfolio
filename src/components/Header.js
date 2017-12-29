@@ -13,9 +13,9 @@ const Header = styled.h1`
   font-weight: ${fontWeight.bold};
   color: ${props => props.branded ? `${textColor.brand}` : `${textColor.primary}`};
   line-height: ${lineHeight.default};
-  margin-top: ${props => 
+  margin-top: ${props =>
     (props.link && `${spacing.xs}`)
-      || ('${spacing.none}')
+      || (`${spacing.none}`)};
   };
 
   margin-bottom: ${props => 
@@ -25,7 +25,7 @@ const Header = styled.h1`
       || (props.large && `${spacing.none}`)
       || (props.xlarge && `${spacing.none}`)
       || (props.link && `${spacing.xxs}`)
-      || ('${spacing.none}')
+      || (`${spacing.none}`)
   };
 
   font-size: ${props => 
@@ -35,7 +35,7 @@ const Header = styled.h1`
       || (props.large && `${fontSize.l}`)
       || (props.xlarge && `${fontSize.xl}`)
       || (props.link && `${fontSize.ss}`)
-      || ('${fontSize.m}')
+      || (`${fontSize.m}`)
   };
 `;
 

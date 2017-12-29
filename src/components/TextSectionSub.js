@@ -1,6 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Grid } from 'semantic-ui-react';
 
 import MarginBottomS from './MarginBottomS'; 
 import Header from './Header';

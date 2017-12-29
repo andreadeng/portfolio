@@ -6,8 +6,6 @@ import TextSection from '../components/TextSection';
 import TextSectionSub from '../components/TextSectionSub'; 
 import NumList from '../components/NumList'; 
 import ImageSection from '../components/ImageSection';
-import PairImageSection from '../components/PairImageSection';
-import TrioImageSection from '../components/TrioImageSection'; 
 import QuadImageSection from '../components/QuadImageSection'; 
 import FullImageSection from '../components/FullImageSection';
 import Header from '../components/Header';
@@ -40,7 +38,7 @@ class OrdersProjectPage extends React.Component {
             The Brief
           </Header>
           <Paragraph>
-            <a href="https://scalablepress.com/" target="_blank">
+            <a href="https://scalablepress.com/" target="_blank" rel="noopener noreferrer">
               <LinkBody>
                 Scalable Press
               </LinkBody>
@@ -260,7 +258,8 @@ class OrdersProjectPage extends React.Component {
 
         <MarginBottomM text>
           <iframe src="https://marvelapp.com/2a6f17f?emb=1" width="100%" 
-            height="500px" allowTransparency="true" frameborder="0">
+            height="500px" allowtransparency="true" frameBorder="0"
+            title="Medium fidelity prototype demo">
           </iframe>
           <Caption italic centered>
             Medium fidelity prototype of (D) from above explorations
@@ -304,8 +303,9 @@ class OrdersProjectPage extends React.Component {
             <Grid.Column mobile={16} tablet={12} computer={14}>
               <iframe width="100%" height="550" 
                 src="https://www.youtube.com/embed/h0qEgbATAp8?rel=0&amp;showinfo=0" 
-                frameborder="0" gesture="media" allow="encrypted-media" 
-                allowfullscreen>
+                frameBorder="0" gesture="media" allow="encrypted-media" 
+                allowFullScreen
+                title="Final prototype demo">
               </iframe>
             </Grid.Column>
             <Grid.Column only='tablet computer' width={1}>

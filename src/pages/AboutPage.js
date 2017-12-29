@@ -1,11 +1,9 @@
 import React from 'react';
 import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
-import Caption from '../components/Caption';
 import MarginBottomM from '../components/MarginBottomM';
 import MarginBottomS from '../components/MarginBottomS';
 import ImageSection from '../components/ImageSection';
-import Span from '../components/Span';
 import { LinkBody } from '../components/Buttons';
 
 class AboutPage extends React.Component {
@@ -38,7 +36,7 @@ class AboutPage extends React.Component {
           </Paragraph>
           <Paragraph>
             Take a look at my&nbsp;
-            <a href="https://www.dropbox.com/s/776nhv4b9me87i0/Andrea_Resume.12.28.17.pdf?dl=0" target="_blank">
+            <a href="https://www.dropbox.com/s/776nhv4b9me87i0/Andrea_Resume.12.28.17.pdf?dl=0" target="_blank" rel="noopener noreferrer">
               <LinkBody>
                 resume
               </LinkBody>
@@ -58,7 +56,7 @@ class AboutPage extends React.Component {
               </LinkBody>
             </a>
             &nbsp;or connect on&nbsp;
-            <a href="https://www.linkedin.com/in/andreadeng/" target="_blank">
+            <a href="https://www.linkedin.com/in/andreadeng/" target="_blank" rel="noopener noreferrer">
               <LinkBody>
                 LinkedIn
               </LinkBody>

@@ -1,6 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Container } from 'semantic-ui-react';
 import { Grid } from 'semantic-ui-react';
 import { Image } from 'semantic-ui-react';
 

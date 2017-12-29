@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import styled from 'styled-components';
 
 import { Grid } from 'semantic-ui-react';
 import { Image } from 'semantic-ui-react';
@@ -24,19 +23,19 @@ class HomePage extends React.Component {
                 I’m a Product Designer in San Francisco 
                 and have previously worked at&nbsp;
                 
-                <a href="https://scalablepress.com/" target="_blank">
+                <a href="https://scalablepress.com/" target="_blank" rel="noopener noreferrer">
                   <LinkBody>
                     Scalable Press
                   </LinkBody>
                 </a>
                 ,&nbsp;
-                <a href="https://hackclub.com/" target="_blank">
+                <a href="https://hackclub.com/" target="_blank" rel="noopener noreferrer">
                   <LinkBody>
                     Hack Club
                   </LinkBody>
                 </a>
                 ,&nbsp;and&nbsp;
-                <a href="https://viaprograms.org/expand-your-boundaries/social-innovation-design-thinking/" target="_blank">
+                <a href="https://viaprograms.org/expand-your-boundaries/social-innovation-design-thinking/" target="_blank" rel="noopener noreferrer">
                   <LinkBody>
                     VIA
                   </LinkBody>
