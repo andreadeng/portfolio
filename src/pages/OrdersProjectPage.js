@@ -6,6 +6,7 @@ import TextSection from '../components/TextSection';
 import TextSectionSub from '../components/TextSectionSub'; 
 import NumList from '../components/NumList'; 
 import ImageSection from '../components/ImageSection';
+import PairImageSection from '../components/PairImageSection';
 import QuadImageSection from '../components/QuadImageSection'; 
 import FullImageSection from '../components/FullImageSection';
 import Header from '../components/Header';
@@ -62,6 +63,7 @@ class OrdersProjectPage extends React.Component {
           </Paragraph>
         </MarginBottomM>
 
+        
         <MarginBottomM text>
           <Header medium>
             My role and constraints
@@ -83,7 +85,11 @@ class OrdersProjectPage extends React.Component {
             as I was working on the third iteration of the solution.
           </Paragraph>
         </MarginBottomM>
-        
+
+        <ImageSection
+          src="https://cdn-images-1.medium.com/max/1600/1*IL66pt7fhcHuoR0JIh0v2g.jpeg"
+          caption="Team visit to our facility in Lawrence, Indiana to understand fulfillment process."
+        />
       
         <TextSection 
           header="Making Events Feed more detailed"
@@ -151,6 +157,14 @@ class OrdersProjectPage extends React.Component {
           </Paragraph>
         </MarginBottomM>
 
+        <FullImageSection 
+          src="https://cdn-images-1.medium.com/max/2000/1*ZGl6rsLRr-j6qq6D4AhMLQ.png"
+          caption="
+            Chart of order delay reasons. All reasons can be caught and resolved 
+            early, except for Facility capacity.
+          "
+        />  
+
         <TextSection 
           header="Brainstorming"
           content={
@@ -163,9 +177,11 @@ class OrdersProjectPage extends React.Component {
           }
         />
 
-        <ImageSection 
-          src="https://cdn-images-1.medium.com/max/2000/1*Obi0br-pktuxFOdzoreccQ.jpeg"
-          caption="Categorizing our brainstorm"
+        <PairImageSection 
+          src_left="https://cdn-images-1.medium.com/max/1600/1*J2NKYsrN_4mxMbCEymCanA.jpeg"
+          caption_left="Affinity map of user research"
+          src_right="https://cdn-images-1.medium.com/max/2000/1*Obi0br-pktuxFOdzoreccQ.jpeg"
+          caption_right="Categorizing our brainstorm"
         />        
 
         <TextSection
